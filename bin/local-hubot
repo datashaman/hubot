@@ -1,0 +1,5 @@
+#!/bin/bash
+
+HUBOT_ENV=${HUBOT_ENV:-local}
+source "config/$HUBOT_ENV.sh"
+bin/hubot --adapter hipchat
